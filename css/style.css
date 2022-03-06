@@ -1,0 +1,28 @@
+.image img{
+    width: 30px;
+    border-radius: 50px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.item{
+    background: orange;
+    color: black;
+    padding: 10px 0px;
+    margin-top: 15px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+}
+
+.item i{
+    font-size: 30px;
+}
+
+.item p{
+    font-size: 18px;
+    padding-top: 10px;
+}
