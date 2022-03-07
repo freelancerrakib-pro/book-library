@@ -9,7 +9,10 @@ body{
     padding:0px;
     margin:0px;
 }
-
+.container{
+    width: 82%;
+    margin: auto;
+}
 .image img{
     width: 30px;
     border-radius: 50px;
@@ -53,9 +56,10 @@ div.gallery{
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 150px;
+    width: 170px;
     font-size: 12px;
     background-color: white;
+    overflow: hidden;
 }
 
 div.gallery:hover{
@@ -71,7 +75,7 @@ div.description{
    
 text-align: center;
    
-margin: 0px 15px;
+margin: 4px 10px;
 }
 p a {
     font-size: 13px;
@@ -89,10 +93,9 @@ p a {
 .btns {
     width: 100%;
     background: orange;
-    border-radius: 0px;
-    height: 32px;
+    height: 22px;
+    padding-top: 8px;
     text-align: center;
-    padding: 2px;
 }
 
 .btns a {
