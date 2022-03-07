@@ -9,6 +9,7 @@ body{
     padding:0px;
     margin:0px;
 }
+
 .image img{
     width: 30px;
     border-radius: 50px;
@@ -29,6 +30,11 @@ body{
     box-shadow: 0 0 5px rgb(0 0 0 / 20%);
 }
 
+.row.text-center a {
+    color: black;
+    text-decoration: none;
+    
+}
 .item i{
     font-size: 30px;
 }
@@ -36,6 +42,7 @@ body{
 .item p{
     font-size: 18px;
     padding-top: 10px;
+    font-weight: 700;
 }
 form.d-flex {
     margin-top: 10px;
@@ -79,21 +86,22 @@ p a {
 
    
 }
-.btn {
+.btns {
     width: 100%;
     background: orange;
     border-radius: 0px;
     height: 32px;
+    text-align: center;
     padding: 2px;
 }
 
-.btn a {
+.btns a {
     text-decoration: none;
     color: black;
     font-size: 16px;
     font-weight: 700;
 }
-.btn:hover{
+.btns:hover{
     background-color:rgba(255, 166, 0, 0.699);
    
 }
