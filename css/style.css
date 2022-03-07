@@ -10,8 +10,11 @@ body{
     margin:0px;
 }
 .container{
-    width: 82%;
+    /* width: 82%; */
     margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px 20px;
 }
 .image img{
     width: 30px;
@@ -56,10 +59,9 @@ div.gallery{
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 170px;
     font-size: 12px;
     background-color: white;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 div.gallery:hover{
