@@ -11,8 +11,8 @@ body{
 }
 .container{
     width: 90%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     margin: auto;
     display: grid;
     grid-template-columns: auto auto;
@@ -104,7 +104,7 @@ p a {
 
 .btns a {
     text-decoration: none;
-    color: red;
+    color: white;
     font-size: 35px;
     font-weight: 700;
 }
