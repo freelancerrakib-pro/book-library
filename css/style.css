@@ -82,7 +82,7 @@ text-align: center;
 margin: 4px 10px;
 }
 p a {
-    font-size: 30px;
+    font-size: 25px;
     color: black;
     font-weight: 600;
     text-decoration: none;
@@ -96,20 +96,19 @@ p a {
 }
 .btns {
     width: 100%;
-    background: orange;
+    background: green;
     height: 50px;
     padding-top: 12px;
     text-align: center;
-    
 }
 
 .btns a {
     text-decoration: none;
-    color: black;
-    font-size: 35px;
+    color: red;
+    font-size: 25px;
     font-weight: 700;
 }
 .btns:hover{
-    background-color:rgba(255, 166, 0, 0.699);
+    background-color:rgba(0, 128, 0, 0.774);
    
 }

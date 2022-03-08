@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #2e343c;
+    background-color: #ddd;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -27,10 +27,9 @@ body {
 
 .register {
     position: absolute;
-    background-color: #333333;
+    background-color: white;
     width: 100%;
     height: 100%;
-    
 }
 
 .register form {
@@ -38,7 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 
@@ -58,29 +57,20 @@ input[type='text'] {
     background: none;
     outline: none;
     border: none;
-    color: #e6e7e8;
+    font-size:16px;
+    color: black;
     border-bottom: 1px solid #e6e7e8;
 }
 
-input[type='password'] {
-    width: 100%;
-    height: 100%;
-    background: none;
-    outline: none;
-    border: none;
-    color: #e6e7e8;
-    padding-left: 25px;
-    border-bottom: 1px solid #e6e7e8;
-}
 
 input[type='submit'] {
     background: none;
     border: none;
     outline: none;
-    background-color: #f9d342;
+    background-color: green;
     font-weight: 800px;
-    padding: 7px 111px;
-    color: black;
+    padding: 9px 76px;
+    color: white;
     margin-top: 30px;
     border-radius: 3px;
     font-size: 17px;
@@ -90,20 +80,47 @@ input[type='submit'] {
 input[type='submit']:hover {
     transition: 0.3s;
     cursor: pointer;
-    background-color: black;
-    color:#f9d342;
+    background-color: rgb(29, 216, 29);
+    color:white;
 }
+
+
 
 .box-field label {
     position: absolute;
-    top: 0;
+    top: -5px;
+    font-size: 16px;
     left: 0;
     pointer-events: none;
 }
 
-h2 {
-    color: #f9d342;
+.box-field .bar-animation {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform: scaleX(0);
 }
+
+input[type='text']:focus~label,
+input[type='text']:valid~label {
+    opacity: 0;
+}
+
+
+input[type='text']:focus~.bar-animation,
+input[type='text']:valid~.bar-animation {
+    transition: transform 1s linear;
+    transform: scaleX(1);
+}
+
+
+h2 {
+    color: green;
+}
+
 
 
 
