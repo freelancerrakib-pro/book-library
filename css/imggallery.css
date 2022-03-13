@@ -28,7 +28,7 @@ div.gallery{
     float: left;
     font-size: 12px;
     background-color: white;
-    /* overflow: hidden; */
+/* overflow: hidden; */
 }
 
 div.gallery:hover{

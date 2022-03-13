@@ -1,140 +1,113 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
 }
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #ddd;
-    font-family: 'Josefin Sans', sans-serif;
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #dddddd54;
 }
-
-.form-wrapper {
-    position: relative;
-    height: 500px;
-    width: 350px;
-    overflow: hidden;
-  
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
-
-.register {
-    position: absolute;
-    background-color: white;
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 190px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, green, red);
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 35px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: green;
+}
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, green, red);
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient(135deg, red,green);
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
     width: 100%;
-    height: 100%;
-}
-
-.register form {
+  }
+  form .category{
     width: 100%;
-    display: flex;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
     flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+  }
 }
-
-
-.box-field {
-    position: relative;
-    width: 80%;
-    height: 20px;
-    margin-top: 9%;
-    color: #bac2c9;
-}
-
-.box-field .icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #bac2c9;
-    pointer-events: none;
-}
-
-.box-field label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-left: 25px;
-    pointer-events: none;
-}
-
-input[type='text'] {
-    width: 100%;
-    height: 100%;
-    background: none;
-    outline: none;
-    border: none;
-    font-size:16px;
-    padding-left: 25px;
-    color: black;
-    border-bottom: 1px solid #e6e7e8;
-}
-
-
-input[type='submit'] {
-    background: none;
-    border: none;
-    outline: none;
-    background-color: green;
-    font-weight: 800px;
-    padding: 9px 76px;
-    color: white;
-    margin-top: 30px;
-    border-radius: 3px;
-    font-size: 17px;
-    box-sizing: border-box;
-}
-
-input[type='submit']:hover {
-    transition: 0.3s;
-    cursor: pointer;
-    background-color: rgb(29, 216, 29);
-    color:white;
-}
-
-
-
-.box-field label {
-    position: absolute;
-    top: -5px;
-    font-size: 16px;
-    left: 0;
-    pointer-events: none;
-}
-
-.box-field .bar-animation {
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    background-color: red;
-    transform: scaleX(0);
-}
-
-input[type='text']:focus~label,
-input[type='text']:valid~label {
-    opacity: 0;
-}
-
-
-input[type='text']:focus~.bar-animation,
-input[type='text']:valid~.bar-animation {
-    transition: transform 1s linear;
-    transform: scaleX(1);
-}
-
-
-h2 {
-    color: green;
-}
-
-
-
-
-
